@@ -9,8 +9,11 @@ Install vagrant for your platform
 https://www.vagrantup.com/downloads
 
 Clone this repo
+
 Inside the folder repo, run
+
 vagrant up #to bring up the VM
+
 vagrant ssh #to sh to the VM
 
 code is in tc-site folder
