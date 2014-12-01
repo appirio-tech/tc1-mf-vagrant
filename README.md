@@ -8,8 +8,8 @@ Vagrant environment for topcoder member facing site.
 #### Vagrant: https://www.vagrantup.com/downloads
 
 ## Installation:
-1. Clone this repo
-2. Inside the folder repo, run the following commands: 
+* Clone this repo
+* Inside the folder repo, run the following commands: 
 (Please notethe first command is a 1GB download)
 
 ```
@@ -17,7 +17,8 @@ vagrant up --provider=virtualbox #to bring up the VM
 vagrant ssh #to ssh to the VM
 ```
 
-3. Set /etc/hosts file to include:
+* Set /etc/hosts file to include:
 local.topcoder.com 192.168.33.10
 
-4. Visit http://local.topcoder.com
+* Visit http://local.topcoder.com
+* Usually a good idea to do a 'git pull' inside the tc-site folder on the vagrant box
