@@ -3,21 +3,21 @@ tc1-mf-vagrant
 
 Vagrant environment for topcoder member facing site.
 
-Tested with Virtualbox: https://www.virtualbox.org/wiki/Downloads, if you have no VM provider, please download and install that.
+# Prerequisites:
+  Virtualbox: https://www.virtualbox.org/wiki/Downloads
+  Vagrant: https://www.vagrantup.com/downloads
 
-Install vagrant for your platform
-https://www.vagrantup.com/downloads
+# Installation:
+1. Clone this repo
+2. Inside the folder repo, run the following commands: 
+(Please notethe first command is a 1GB download)
 
-Clone this repo
+```
+vagrant up --provider=virtualbox #to bring up the VM
+vagrant ssh #to ssh to the VM
+```
 
-Inside the folder repo, run
-
-vagrant up #to bring up the VM
-
-vagrant ssh #to sh to the VM
-
-code is in tc-site folder
-Set /etc/hosts file to include:
+3. Set /etc/hosts file to include:
 local.topcoder.com 192.168.33.10
 
-Visit http://local.topcoder.com
+4. Visit http://local.topcoder.com
