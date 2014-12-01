@@ -4,8 +4,8 @@ tc1-mf-vagrant
 Vagrant environment for topcoder member facing site.
 
 ## Prerequisites:
-#  Virtualbox: https://www.virtualbox.org/wiki/Downloads
-#  Vagrant: https://www.vagrantup.com/downloads
+#### Virtualbox: https://www.virtualbox.org/wiki/Downloads
+#### Vagrant: https://www.vagrantup.com/downloads
 
 ## Installation:
 1. Clone this repo
