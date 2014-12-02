@@ -19,7 +19,6 @@ vagrant ssh #to ssh to the VM
 
 * Set /etc/hosts file to include:
 local.topcoder.com 192.168.33.10
-
 * Visit http://local.topcoder.com
 * Usually a good idea to do a 'git pull' inside the tc-site folder on the vagrant box
 * The default login/pass for wp-admin is: tcdev/tcdev
