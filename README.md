@@ -18,9 +18,9 @@ vagrant up --provider=virtualbox #to bring up the VM
 vagrant ssh #to ssh to the VM
 ```
 
-* Home directory on vm will be mapped to your ~/tc-env on host by default
+* Home directory on vm will be mapped to your ~/tc-env on host by default, so ~/tc-env/tc-site will have the code for the site in it
 * Set /etc/hosts file to include:
 local.topcoder.com 192.168.33.10
 * Visit http://local.topcoder.com
-* Usually a good idea to do a 'git pull' inside the tc-site folder on the vagrant box
-* The default login/pass for wp-admin is: tcdev/tcdev
+* Make sure to do a 'git pull' inside the tc-site folder before you get started
+* The default login/pass for wp-admin is: tcdev/tcdev, no caching is on by default but some js/css changes require you to [Update JS/CSS Registry](http://dev1.topcoder.com/wp-admin/themes.php?page=options.php)
