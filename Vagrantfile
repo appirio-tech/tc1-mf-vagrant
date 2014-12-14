@@ -26,6 +26,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # using a specific IP.
   config.vm.network "private_network", ip: "192.168.33.10"
   #config.vm.synced_folder '.', '/vagrant', nfs: true
+  config.sshfs.paths = { "/home/vagrant" => "~/tc-env" }
+
 
   config.vm.provider "virtualbox" do |v|
     host = RbConfig::CONFIG['host_os']

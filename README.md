@@ -10,9 +10,10 @@ Vagrant environment for topcoder member facing site.
 ## Installation:
 * Clone this repo
 * Inside the folder repo, run the following commands: 
-(Please note, the first command is a 1GB download)
+(Please note, the 'vagrant up' command is a 1GB download)
 
 ```
+vagrant plugin install vagrant-sshfs
 vagrant up --provider=virtualbox #to bring up the VM
 vagrant ssh #to ssh to the VM
 ```
