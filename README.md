@@ -18,6 +18,7 @@ vagrant up --provider=virtualbox #to bring up the VM
 vagrant ssh #to ssh to the VM
 ```
 
+* Home directory on vm will be mapped to your ~/tc-env on host by default
 * Set /etc/hosts file to include:
 local.topcoder.com 192.168.33.10
 * Visit http://local.topcoder.com
