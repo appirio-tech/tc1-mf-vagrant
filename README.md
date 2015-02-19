@@ -11,7 +11,10 @@ Vagrant environment for topcoder member facing site.
 * Clone this repo
 * Inside the folder repo, run the following commands: 
 (Please note, the 'vagrant up' command is a 1GB download)
-* Note if you are on a mac you need to intall osxfuse.  If you are using brew, here is the command: brew install Caskroom/cask/osxfuse
+
+'''
+Note if you are on a mac you need to intall osxfuse.  If you are using brew, here is the command: brew install Caskroom/cask/osxfuse
+'''
 
 ```
 vagrant plugin install vagrant-sshfs
