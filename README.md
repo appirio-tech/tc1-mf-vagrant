@@ -13,7 +13,9 @@ Vagrant environment for topcoder member facing site.
 (Please note, the 'vagrant up' command is a 1GB download)
 
 '''
-Note if you are on a mac you need to intall osxfuse.  If you are using brew, here is the command: brew install Caskroom/cask/osxfuse
+Note if you are on a mac you need to intall osxfuse.  If you are using brew, here is the command: 
+brew install sshfs
+or download from http://osxfuse.github.io/
 '''
 
 ```
