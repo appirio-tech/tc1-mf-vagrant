@@ -29,4 +29,5 @@ vagrant ssh #to ssh to the VM
 local.topcoder.com 192.168.33.10
 * Visit http://local.topcoder.com
 * Make sure to do a 'git pull' inside the tc-site folder before you get started
+* Run 'grunt dev' to build/watch the src folder.
 * The default login/pass for wp-admin is: tcdev/tcdev, no caching is on by default but some js/css changes require you to [Update JS/CSS Registry](http://dev1.topcoder.com/wp-admin/themes.php?page=options.php)
