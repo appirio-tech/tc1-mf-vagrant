@@ -21,9 +21,11 @@ vagrant ssh #to ssh to the VM
 
 * Home directory on vm will be mapped to your ~/tc-env on host by default, so ~/tc-env/tc-site will have the code for the site in it
 * Set /etc/hosts file to include:
-** local.topcoder.com 192.168.33.10
-** local.topcoder-dev.com 192.168.33.10
-** local.topcoder-qa.com 192.168.33.10
+```
+192.168.33.10 local.topcoder.com
+192.168.33.10 local.topcoder-dev.com
+192.168.33.10 local.topcoder-qa.com
+```
 * Make sure to do a 'git pull' inside the tc-site folder before you get started
 * Run 'grunt dev' to build/watch the src folder. This will build the project and configure your local instance against the production database, so please use caution. To use the dev or qa databases, run src/conf/debug-local-dev.sh or src/conf/debug-local-dev.sh
 * The site will be available from any of the above hostnames, but you will want to test using the domain that matches the database instance you have built for to avoid cookie conflicts, etc.
