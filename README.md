@@ -33,6 +33,7 @@ vagrant ssh #to ssh to the VM
 * If you are using the wordpress side:
   * The default login/pass for wp-admin is: tcdev/tcdev, no caching is on by default but some js/css changes require you to [Update JS/CSS Registry](http://dev1.topcoder.com/wp-admin/themes.php?page=options.php)
   * You will need to keep wp-config.php up to date with which backend you are using, for instance if you ran sr/conf/debug-local-dev.sh, you would need:
+ 
     ```
     Define('WP_SITEURL','http://local.topcoder-dev.com');
     Define('WP_HOME','http://local.topcoder-dev.com');
