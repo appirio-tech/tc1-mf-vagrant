@@ -28,7 +28,7 @@ vagrant ssh #to ssh to the VM
 ```
 * Make sure to do a 'git pull' inside the tc-site folder before you get started
 * Run 'grunt dev' to build/watch the src folder. This will build the project and configure your local instance against the production database, so please use caution. To use the dev or qa databases, run src/conf/debug-local-dev.sh or src/conf/debug-local-dev.sh
-  * Please not on MacOS if you run grunt dev from your ssh mapped folder, the fuse driver does not always play nice, so it is     best to run this from the vagrant machine via vagrant ssh and use the mapped folder just for code modifications.
+  * MacOS Only: If you run grunt dev from your ssh mapped folder, the fuse driver does not always play nice (leaves hidden files that get locked), so it is best to run this from the vagrant machine via vagrant ssh and use the mapped folder just for code modifications.
 * The site will be available from any of the above hostnames, but you will want to test using the domain that matches the database instance you have built for to avoid cookie conflicts, etc.
 * If you are using the wordpress side:
   * The default login/pass for wp-admin is: tcdev/tcdev, no caching is on by default but some js/css changes require you to [Update JS/CSS Registry](http://dev1.topcoder.com/wp-admin/themes.php?page=options.php)
