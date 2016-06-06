@@ -19,7 +19,7 @@ vagrant up --provider=virtualbox #to bring up the VM
 vagrant ssh #to ssh to the VM
 ```
 
-* tc-site directory on vagrant machine ~/tc-env on host
+* The tc-site directory on the vagrant machine maps to the ~/tc-env on your host
 * machine by default, so you should clone the [tc-site repo](https://github.com/appirio-tech/tc-site) to your `~/tc-env` folder.
 * Alternatively, you can modify the `localTCSite` variable in the Vagrantfile.
 * Set /etc/hosts file on host machine to include:
