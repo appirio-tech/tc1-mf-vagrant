@@ -14,12 +14,14 @@ Vagrant environment for topcoder member facing site.
 (Please note, the 'vagrant up' command is a 1GB download)
 
 ```
-vagrant plugin install vagrant-sshfs
+vagrant plugin install vagrant-sshfs --plugin-version=0.0.6 #need old version
 vagrant up --provider=virtualbox #to bring up the VM
 vagrant ssh #to ssh to the VM
 ```
 
-* Home directory on vagrant machine will be mapped to your ~/tc-env on host machine by default, so ~/tc-env/tc-site will have the code for the site in it
+* The tc-site directory on the vagrant machine maps to the ~/tc-env on your host
+* machine by default, so you should clone the [tc-site repo](https://github.com/appirio-tech/tc-site) to your `~/tc-env` folder.
+* Alternatively, you can modify the `localTCSite` variable in the Vagrantfile.
 * Set /etc/hosts file on host machine to include:
 ```
 192.168.33.10 local.topcoder.com

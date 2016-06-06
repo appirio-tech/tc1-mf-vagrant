@@ -5,6 +5,13 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.ssh.private_key_path = "~/.ssh/id_rsa"
+  config.ssh.forward_agent = true
+
+
+  #config.ssh.password = true
+
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
   # please see the online documentation at vagrantup.com.
@@ -25,8 +32,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
   config.vm.network "private_network", ip: "192.168.33.10"
-  #config.vm.synced_folder '.', '/vagrant', nfs: true
-  config.sshfs.paths = { "/home/vagrant" => "~/tc-env" }
+  ##localTCSite = '~/tc-env/tc-site/'
+  localTCSite = '~/Documents/appirio/tc-site/'
+  config.vm.synced_folder localTCSite, '/home/vagrant/tc-site/', nfs: true
+  #config.sshfs.paths = { "/home/vagrant" => "~/tc-env" }
+
+  #config.ssh.password = "vagrant"
+  config.ssh.insert_key = false
 
 
   config.vm.provider "virtualbox" do |v|
