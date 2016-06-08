@@ -25,8 +25,11 @@ vagrant ssh #to ssh to the VM
 * Set /etc/hosts file on host machine to include:
 ```
 192.168.33.10 local.topcoder.com
+192.168.33.10 member.local.topcoder.com
 192.168.33.10 local.topcoder-dev.com
+192.168.33.10 member.local.topcoder-dev.com
 192.168.33.10 local.topcoder-qa.com
+192.168.33.10 member.local.topcoder-qa.com
 ```
 * Make sure to do a 'git pull' inside the tc-site folder before you get started
 * Run 'grunt dev' to build/watch the src folder. This will build the project and configure your local instance against the production database, so please use caution. To use the dev or qa databases, run src/conf/debug-local-dev.sh or src/conf/debug-local-dev.sh
